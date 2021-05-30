@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.stocks {
+  margin-top: 50px;
+}
+.stocksCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 275px));
+  justify-content: center;
+  align-items: center;
+  grid-gap: 30px;
+}
+
+.stockcard {
+  border: 1px solid black;
+  padding: 20px;
+  border-radius: 10px;
+  height: 350px;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  position: relative;
+}
+
+.stats {
+  font-size: 0.9rem;
+  font-weight: 400;
+  position: absolute;
+  bottom: 200px;
+  right: 10px;
+}
+
+.positive {
+  color: green;
+}
+
+.negative {
+  color: red;
+}
+
+.statsSection {
+  display: grid;
+  place-items: center;
+  border-top: 1px solid black;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin-bottom: 5px;
+  font-size: 0.8rem;
+}
+
+h3 {
+  font-size: 1rem;
+  margin: 10px 0px;
+}
